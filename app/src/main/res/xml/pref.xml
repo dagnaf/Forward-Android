@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:key="pref_forward"
+        android:title="@string/pref_forward"
+        android:defaultValue="false"
+        />
+    <PreferenceCategory
+        android:key="pref_account"
+        android:title="@string/pref_account_name"
+        android:dependency="pref_forward">
+        <EditTextPreference
+            android:key="pref_email"
+            android:title="@string/pref_email_name"
+            android:defaultValue="default@example.com"
+            android:summary="default@example.com"
+            />
+        <EditTextPreference
+            android:key="pref_pw"
+            android:title="@string/pref_pw_name"
+            android:password="true"
+            android:defaultValue="default"
+            android:summary="******"
+            />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_test"
+        android:title="@string/pref_test_name"
+        android:dependency="pref_forward">
+        <Preference
+            android:key="pref_login"
+            android:title="@string/pref_login_name"
+            />
+    </PreferenceCategory>
+</PreferenceScreen>

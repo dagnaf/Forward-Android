@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Forward</string>
+    <string name="pref_forward">Forward to email</string>
+    <string name="pref_account_name">Account</string>
+    <string name="pref_email_name">Email</string>
+    <string name="pref_pw_name">Password</string>
+    <string name="pref_test_name">Test</string>
+    <string name="pref_login_name">Log in</string>
+    <string name="successful">successful</string>
+    <string name="failed">failed</string>
+
+    <!--<string name="pref_forward_summ">SMS and calls</string>-->
+</resources>
